@@ -1,0 +1,20 @@
+# /home/administrator/code/environments/production/manifests/site.pp
+# notify 테스트
+node 'vm01.linuxmastery.kr' {
+  user { 'gloomy':
+    ensure => absent,
+  }
+
+  user { 'cynical':
+    ensure => present,
+    password => '$1$X3hIJDev$gwszPsc5ZzRFNXqHYbH3W/',
+    managehome => true,
+    shell => '/bin/bash',
+}
+
+node 'vm01.linuxmastery.kr' {
+  user { 'gloomy':
+    ensure => absent,
+  }
+}
+

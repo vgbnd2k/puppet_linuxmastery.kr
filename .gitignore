@@ -1,0 +1,5 @@
+data/
+*.temp
+!exception.temp
+data/*.temp
+data/**/*.temp
