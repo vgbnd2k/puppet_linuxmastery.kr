@@ -2,6 +2,5 @@
 # 노드 선언
 node 'vm03.linuxmastery.kr' {
   include base
-  include fortunecow::install
-  include fortunecow::motd
+  include fortunecow
 }
